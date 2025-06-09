@@ -9,13 +9,14 @@ This project demonstrates a basic Man-In-The-Middle (MITM) attack using ARP spoo
 
 ## Setup
 1. Launch the Rails app on a LAN IP (port 3000)
-   ** The rails app (roundtable) is on my github :  
-3. Disable HTTPS: `config.force_ssl = false`
-4. Run ARP spoofing:
+   ** The rails app (roundtable) is on my github :  https://github.com/deniz14k/Roundtable
+
+2. Disable HTTPS: `config.force_ssl = false`
+3. Run ARP spoofing:
    ```bash
    sudo arpspoof -i eth0 -t [Victim-IP] [Router-IP]
-5. Run Python sniffer script (included in sniffer.py)
-6. Simulate traffic using:
+4. Run Python sniffer script (included in sniffer.py)
+5. Simulate traffic using:
    ```bash
     curl http://[Victim-IP]:3000
 
